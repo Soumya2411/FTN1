@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const mongoose=require('mongoose');
 const db= require('./db/conn.js')
 const app = express();
+app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
@@ -15,7 +16,7 @@ const userSchema = new mongoose.Schema({
 
   const User = mongoose.model('User', userSchema);
 
-  app.get('/login', (req, res) => {
+  app.get('/signup', (req, res) => {
    
     res.sendFile(path.join(__dirname, 'index.html'));
   });

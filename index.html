@@ -1,24 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <title>Signup</title>
+  </head>
+  <body>
+    <h1>Signup</h1>
+    <form action="/signup" method="POST">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Untitled</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
-    <link rel="stylesheet" href="assets/css/OcOrato---Login-form-styles.css">
-    <link rel="stylesheet" href="assets/css/OcOrato---Login-form.css">
-</head>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br>
 
-<body>
-    <form id="form" style="font-family: Quicksand, sans-serif;background-color: rgba(44,40,52,0.73);width: 320px;padding: 40px;">
-        <h1 id="head" style="color: var(--bs-teal);">Login form</h1>
-        <div><img class="rounded img-fluid" id="image" style="width: auto;height: auto;margin-top: -2px;padding-bottom: 18px;margin-right: 76px;padding-right: 0px;margin-left: 42px;" src="assets/img/img.gif" width="175" height="175"></div>
-        <div class="form-group mb-3"><input class="form-control" type="email" id="formum" style="background: #acc89e;" placeholder="Email" ></div>
-        <div class="form-group mb-3"><input class="form-control" type="password" id="formum2" style="background: #a6ba70;" placeholder="Password"></div><button class="btn btn-light" id="butonas" style="width: 100%;height: 100%;margin-bottom: 10px;background: var(--bs-green);color: rgb(238,232,232);" type="button" <a href="sign.html">Login</a></button><button class="btn btn-light" id="butonas-1" style="width: 100%;height: 100%;margin-bottom: 10px;background: var(--bs-green);color: rgb(238,232,232);" type="button">Create a new ID!</button><a id="linkas" style="font-size: 12px;margin: auto;margin-left: 0;margin-right: 0;margin-bottom: 0;margin-top: 0;padding-left: 0;padding-right: 0;color: var(--bs-btn-border-color);" href="#">Forgot your e mail or password?</a>
+      <button type="submit">Submit</button>
     </form>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-</body>
-
+  </body>
 </html>
