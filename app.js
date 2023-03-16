@@ -39,9 +39,9 @@ const userSchema = new mongoose.Schema({
       });
   });
   
-  app.get('/login',(req,res)=>{
+  
     
-  })
+    
   app.listen(3000, () => {
     console.log('Server started on port 3000');
   });
