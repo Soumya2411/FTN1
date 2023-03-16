@@ -40,7 +40,25 @@ const userSchema = new mongoose.Schema({
   });
   
   
-    
+    app.post('/login',function(req,res){
+      const{email,password} =req.body;
+      User.findOne({email,password},function(err,user){
+        if(err){
+          res.status(500).send('Internal Server error');
+          return;
+        }
+        if(!user){
+          res.status(401).send('Invalid email or password');
+      return;
+    }
+    res.redirect('/dashboard');
+  });
+});
+app.get('/dashboard', function(req, res) {
+  res.send('Welcome to the dashboard!');
+});
+
+      
     
   app.listen(3000, () => {
     console.log('Server started on port 3000');
