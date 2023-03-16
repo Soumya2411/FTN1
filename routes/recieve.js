@@ -3,6 +3,6 @@ const { dirname } = require('path');
 const app = express();
 const router = express.Router();
 
-router.get('/donate',(req,res)=>{
+router.get('/recieve',(req,res)=>{
     res.sendFile()
 })
